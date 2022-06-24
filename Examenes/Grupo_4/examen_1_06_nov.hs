@@ -35,7 +35,7 @@ aproxima2 n = sum [1 / (2^k) | k <- [0..n]]
 --    relacionados 18 12 == True
 -- ---------------------------------------------------------------------
 
-relacionados:: Integer -> Integer -> Bool
+relacionados :: Integer -> Integer -> Bool
 relacionados m n = 
     nub (divisoresPrimos n) == nub (divisoresPrimos m)
 

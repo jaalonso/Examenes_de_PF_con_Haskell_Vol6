@@ -21,8 +21,8 @@ esPotencia x a = x `elem` [a^n | n <- [0..x]]
 -- 2ª definición (por recursión):
 esPotencia2 :: Integer -> Integer -> Bool
 esPotencia2 x a = aux x a 0
-    where aux x a b | b > x     = False
-                    | otherwise = x == a ^ b || aux x a (b+1)
+  where aux x a b | b > x     = False
+                  | otherwise = x == a ^ b || aux x a (b+1)
 
 -- 3ª definición (por recursión):
 esPotencia3 :: Integer -> Integer -> Bool
